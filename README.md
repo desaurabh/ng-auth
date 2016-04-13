@@ -1,15 +1,10 @@
 # ng-auth
 This module is build to extend Angular application's where Authorization & Authentication are required.
 
-The module can easily be implemented by configuring 3 basic properties
-1. Application roles
-2. Authentication endpoints - Authentication endpoints requires 4 important endpoint
-- Login
-- Authenticate
-- Logout	
-- Home
-
-3. Global Url - These url's are those which do not require authentication neither any authorization	
+The module can easily be implemented by configuring 3 basic properties			
+1. Application roles 		
+2. Authentication endpoints 	
+3. Global Url		
 
 #### Example : Basic implementation 		  
 ```javascript
