@@ -3,14 +3,15 @@ This module is build to extend Angular application's where Authorization & Authe
 
 The module can easily be implemented by configuring 3 basic properties
 1. Application roles
-2. Authentication endpoints - Authentication endpoints requires 4 important endpoint
+2. Authentication endpoints - Authentication endpoints requires 4 important endpoint  
 ..* Login
 ..* Authenticate
 ..* Logout
 ..* Home
-3. Global Url - These url's are those which do not require authentication neither any authorization
 
-Example : Basic implementation 
+3. Global Url - These url's are those which do not require authentication neither any authorization	
+
+Example : Basic implementation 		  
 ```javascript
 angular.module('app',['ngAuth'])
 .config(function(authServiceProvider){
