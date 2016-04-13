@@ -1,0 +1,26 @@
+{
+  "name": "angular-auth",
+  "authors": [
+    "Saurabh Verma <desaurabh@live.com>"
+  ],
+  "description": "angular module built to facilitate authorization & authentication",
+  "main": "src/ng-auth.js",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "authorization",
+    "authentication"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.5.3"
+  }
+}
