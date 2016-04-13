@@ -1,5 +1,5 @@
 /*=============================================================================
-* Description : Purpose of this module is to facilitate the process of authorization & authentication in an angular application
+* Description : Purpose of this module is to facilitate the process of authorization & authentication in angular application
 * Author : Saurabh Verma
 * Email  : desaurabh@live.com 
 *========================================================================
