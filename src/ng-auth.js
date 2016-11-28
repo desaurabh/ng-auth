@@ -1,16 +1,10 @@
-/*=============================================================================
-* Description : Purpose of this module is to facilitate the process of authorization & authentication in angular application
-* Author : Saurabh Verma
-* Email  : desaurabh@live.com 
-*========================================================================
-*/
 'use strict';
 (function(angular, AuthService) {
     angular.module("ngAuth", [])
         .provider("authService", function() {
             this.roles = [];
             this.user = {
-                username: '',
+                email: '',
                 password: '',
                 rememberMe: false
             };
@@ -47,16 +41,6 @@
                     scope.$watch('authService.authorized', function(val, old) {
                         if (val) elem.css('display', 'none');
                         else elem.css('display', '');
-                    });
-                }
-            };
-        })
-        .directive("avatarWidget", function(authService) {
-            return {
-                template: '<span class="avatar" style="background-image: url({{avatar}})"></span>',
-                link: function(scope, elem, attr) {
-                    scope.$watch('authService.user.avatar.url', function(val, old) {
-                        scope.avatar = typeof val !== 'undefined' ? val : "http://res.cloudinary.com/ddmfgtsxy/image/upload/v1452700962/default.png";
                     });
                 }
             };
@@ -158,3 +142,4 @@ function authService(roles, url, user, globalUrl, $http, $rootScope, $location) 
 
 
 }
+
