@@ -24,6 +24,17 @@
             return {
                 restrict: 'A',
                 link: function(scope, elem, attr) {
+
+
+		    // Improvisation due to dynamic value passed in attr
+		    // START
+		    scope.$watch(attr.only,function(value){
+			if(typeof value!=='undefined')
+			    attr.only=value.toString();
+		    });
+		    // END
+
+		    
                     scope.$watch('authService.authorized', function(val, old) {
                         if (val) {
                             if (!authService.canAccess(attr.only) && attr.only !== 'all')
@@ -142,4 +153,3 @@ function authService(roles, url, user, globalUrl, $http, $rootScope, $location) 
 
 
 }
-
